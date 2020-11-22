@@ -1,5 +1,3 @@
-![GitHub](https://img.shields.io/github/license/ksator/gnmi_demo_with_arista_eos)
-
 # Table of content
 
 [About this repository](#about-this-repository)   
