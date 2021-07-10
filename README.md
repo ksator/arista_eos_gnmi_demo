@@ -500,12 +500,11 @@ We will use [this gnmi command-line client](https://github.com/aristanetworks/go
 
 ```
 username arista secret 0 arista
-ip access-list GNMI
-  10 permit tcp any any eq gnmi
+
 management api gnmi
-  transport grpc def
-    ip access-group GNMI
-  provider eos-native
+   transport grpc def
+      vrf MGMT
+   provider eos-native
 ```
 
 `provider eos-native` is required to serve gNMI subscription/get requests with EOS native paths.  
